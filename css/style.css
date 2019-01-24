@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+::selection {
+  background-color: #2b469c;
+  color: #fff; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777; }
+
+.header {
+  height: 80vh;
+  background-color: orangered; }
+  .header-brand {
+    display: flex;
+    align-items: center;
+    color: #fff; }
+  .header__logo {
+    height: 100%; }
+    .header__logo-box {
+      height: 5rem;
+      width: auto;
+      margin: 2rem; }
+    .header__logo-text {
+      font-size: 4rem;
+      font-weight: 300;
+      color: inherit;
+      margin-right: auto; }
+  .header__list {
+    list-style: none;
+    margin-right: 3rem;
+    display: flex; }
+    .header__list-item {
+      padding: .5rem 1rem;
+      transition: all .2s; }
+      .header__list-item:not(:last-child) {
+        margin-right: 2rem; }
+      .header__list-item:hover {
+        transform: scale(1.1) translateY(-3px); }
+    .header__list-link {
+      text-decoration: none;
+      color: inherit; }
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(43, 70, 156, 0.9), rgba(153, 213, 236, 0.9), rgba(156, 201, 89, 0.9)), url(../../img/just-logo-lg.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .landing-box {
+    width: 70%;
+    font-size: 1.8rem;
+    padding: 2rem 4rem;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.5); }
+    .landing-box__h1 {
+      text-align: center;
+      background-image: linear-gradient(to right, #2b469c, #99d5ec);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin: 2rem 0;
+      text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+    .landing-box__text {
+      width: 80%;
+      text-align: justify;
+      margin: 0 auto;
+      margin-bottom: 3rem; }
+    .landing-box__buttons {
+      margin: 0 auto;
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+      margin-bottom: 2rem; }
+  .landing-btn:link, .landing-btn:active {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 2rem 4rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all .2s; }
+  .landing-btn:hover {
+    transform: scale(1.15) translateY(-1rem); }
+  .landing-btn:active {
+    transform: scale(1.1) translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+  .landing-btn--diplomas {
+    background-color: #708090;
+    color: #fff; }
+    .landing-btn--diplomas:hover {
+      background-color: #7e8d9b;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); }
+  .landing-btn--handcraft {
+    background-color: #8b4513;
+    color: #fff; }
+    .landing-btn--handcraft:hover {
+      background-color: #a15016;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); }
