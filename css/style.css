@@ -15,6 +15,10 @@ body {
   background-color: #2b469c;
   color: #fff; }
 
+@font-face {
+  font-family: "Zurich";
+  src: url(Zurich.ttf) format("truetype"); }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -22,24 +26,50 @@ body {
   line-height: 1.7;
   color: #777; }
 
+.btn:link, .btn:visited {
+  text-decoration: none;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all .2s; }
+
+.btn:hover {
+  transform: scale(1.15) translateY(-1rem); }
+
+.btn:active {
+  transform: scale(1.1) translateY(-0.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.btn-header {
+  background-color: #2b469c;
+  font-size: 2.5rem;
+  font-weight: 300; }
+  .btn-header:hover {
+    background-color: #203474; }
+
 .header {
-  height: 80vh;
-  background-color: orangered; }
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(153, 213, 236, 0.8)); }
   .header-brand {
     display: flex;
     align-items: center;
-    color: #fff; }
+    color: #2b469c;
+    height: 9rem; }
   .header__logo {
     height: 100%; }
     .header__logo-box {
-      height: 5rem;
+      height: 8rem;
       width: auto;
-      margin: 2rem; }
+      margin: 2.5rem; }
     .header__logo-text {
       font-size: 4rem;
       font-weight: 300;
       color: inherit;
-      margin-right: auto; }
+      margin-right: auto;
+      font-family: "Zurich"; }
   .header__list {
     list-style: none;
     margin-right: 3rem;
@@ -54,6 +84,15 @@ body {
     .header__list-link {
       text-decoration: none;
       color: inherit; }
+  .header-main {
+    height: calc(100vh - 9rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .header__heading {
+    font-size: 8rem;
+    font-weight: 200; }
 
 .landing {
   width: 100vw;
@@ -93,13 +132,13 @@ body {
       width: 70%;
       justify-content: space-between;
       margin-bottom: 2rem; }
-  .landing-btn:link, .landing-btn:active {
+  .landing-btn:link, .landing-btn:visited {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 300;
     padding: 2rem 4rem;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #000;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all .2s; }
