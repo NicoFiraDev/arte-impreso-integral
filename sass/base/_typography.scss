@@ -10,3 +10,16 @@ body {
   line-height: 1.7;
   color: $color-grey-dark;
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  display: inline-flex;
+  background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 .5rem 1.5rem rgba($color-black,.3);
+}
