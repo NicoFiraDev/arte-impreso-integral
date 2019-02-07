@@ -7,9 +7,12 @@
 
 @import "components/button";
 @import "components/card";
+@import "components/form";
 @import "components/services-item";
 
-@import "layout/_header";
+@import "layout/footer";
+@import "layout/header";
+
 
 @import "pages/home";
 @import "pages/landing";

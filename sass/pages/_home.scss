@@ -1,4 +1,4 @@
-.services {
+.section-services {
   margin-top: -8rem;
   padding: 10rem 2rem;
   background-image: 
@@ -19,7 +19,7 @@
     transform: skewY(7deg);
   }
 
-  &-group {
+  .services-group {
     margin-top: 4rem;
 
     display: flex;
@@ -29,17 +29,26 @@
   }
 }
 
-.packages {
+.section-packages {
   padding: 15rem 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  &-group {
+  .packages-group {
     width: 100%;
 
     display: flex;
     justify-content: space-evenly;
   }
+}
+
+.section-contact {
+  background-color: $color-primary;
+  padding: 8rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

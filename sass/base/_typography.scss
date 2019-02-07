@@ -22,4 +22,11 @@ body {
   background-clip: text;
   color: transparent;
   text-shadow: 0 .5rem 1.5rem rgba($color-black,.3);
+
+  &--form {
+    background-image: linear-gradient(to right, $color-primary, lighten($color-primary,10));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
